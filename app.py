@@ -35,7 +35,11 @@ def search():
 
 @app.route("/")
 def home():
-    return render_template("index.html") 
+    name = "Anish"
+    course = "Flask"
+    city = "Bhopal"
+    age = "20"
+    return render_template("index.html", name=name, course=course, city=city, age=age) 
 
 if __name__ == "__main__":
     app.run(debug=True)
